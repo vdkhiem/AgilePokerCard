@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class MainViewController: UIViewController {
     var selectedCard = UIButton()
-    var estimationTypeselectedIndex: Int?
+    var dataCoreManager = CoreDataManager(appDelegate: UIApplication.shared.delegate as! AppDelegate, entityName: "CardType")
     
     @IBOutlet weak var pokerView: UIView!
     @IBOutlet weak var estimationTupeSegmentControl: UISegmentedControl!
@@ -20,9 +21,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //UIApplication.shared.statusBarView? = UIColor.white
-        if let selectIndex = estimationTypeselectedIndex {
-            estimationTupeSegmentControl.selectedSegmentIndex = selectIndex
-        }
+        loadCardTypeSetting()
         displayEstimationType()
     }
     
@@ -32,9 +31,8 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func estimationTypeSegementValueChanged(_ sender: UISegmentedControl) {
-        estimationTypeselectedIndex = estimationTupeSegmentControl.selectedSegmentIndex
         displayEstimationType()
-        
+        saveCardTypeSetting()
     }
     
     @IBAction func buttonPress(_ sender: UIButton) {
@@ -46,7 +44,6 @@ class MainViewController: UIViewController {
         if segue.identifier == "goToSelectedCardScreen" {
             let desViewController = segue.destination as! SelectedCardViewController
             desViewController.textPassedOver = selectedCard.titleLabel!.text
-            
         }
     }
     
@@ -61,6 +58,34 @@ class MainViewController: UIViewController {
     func showPoker(isVisible: Bool) {
         pokerView.isHidden = !isVisible
         tshirtView.isHidden = isVisible
+    }
+    
+    /*
+    // MARK: - Core Data Management
+    */
+    func loadCardTypeSetting() {
+        if let cardTypeSetting = getCardTypeSetting() {
+            estimationTupeSegmentControl.selectedSegmentIndex = cardTypeSetting.value(forKey: "selectedindex") as! Int
+        }
+    }
+    
+
+    func getCardTypeSetting() -> NSManagedObject? {
+        let cardTypeSettingList = dataCoreManager.fetchRows()
+        if (cardTypeSettingList.count > 0 ) {
+            return cardTypeSettingList.first
+        }
+        return nil
+    }
+    
+    func saveCardTypeSetting() {
+        if let cardTypeSetting = getCardTypeSetting() {
+            cardTypeSetting.setValue(estimationTupeSegmentControl.selectedSegmentIndex, forKey: "selectedindex")
+        } else {
+            let rowEntity = dataCoreManager.newRowToEntity()
+            rowEntity.setValue(estimationTupeSegmentControl.selectedSegmentIndex, forKey: "selectedindex")
+            
+        }
     }
     
 }

@@ -14,6 +14,7 @@
 		11043BD020C34032003128B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11043BCF20C34032003128B3 /* Assets.xcassets */; };
 		11043BD320C34032003128B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11043BD120C34032003128B3 /* LaunchScreen.storyboard */; };
 		11043BDE20C34032003128B3 /* AgilePokerCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11043BDD20C34032003128B3 /* AgilePokerCardTests.swift */; };
+		112636B920C4E11C00D60B1F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112636B820C4E11C00D60B1F /* CoreDataManager.swift */; };
 		1156DBBB20C3B80F00849379 /* SelectedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156DBBA20C3B80F00849379 /* SelectedCardViewController.swift */; };
 		1156DBBD20C3C3D600849379 /* UIExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156DBBC20C3C3D600849379 /* UIExtenstion.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		11043BD920C34032003128B3 /* AgilePokerCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgilePokerCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11043BDD20C34032003128B3 /* AgilePokerCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgilePokerCardTests.swift; sourceTree = "<group>"; };
 		11043BDF20C34032003128B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112636B820C4E11C00D60B1F /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1156DBBA20C3B80F00849379 /* SelectedCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCardViewController.swift; sourceTree = "<group>"; };
 		1156DBBC20C3C3D600849379 /* UIExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtenstion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 		11043BC420C34031003128B3 /* AgilePokerCard */ = {
 			isa = PBXGroup;
 			children = (
+				112636B720C4E0D900D60B1F /* Utilities */,
 				1156DBB720C392CD00849379 /* Controllers */,
 				1156DBB620C392C600849379 /* Models */,
 				1156DBB520C392BE00849379 /* Views */,
@@ -102,6 +105,14 @@
 				11043BDF20C34032003128B3 /* Info.plist */,
 			);
 			path = AgilePokerCardTests;
+			sourceTree = "<group>";
+		};
+		112636B720C4E0D900D60B1F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				112636B820C4E11C00D60B1F /* CoreDataManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		1156DBB520C392BE00849379 /* Views */ = {
@@ -230,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112636B920C4E11C00D60B1F /* CoreDataManager.swift in Sources */,
 				11043BC820C34031003128B3 /* MainViewController.swift in Sources */,
 				11043BCE20C34031003128B3 /* AgilePokerCard.xcdatamodeld in Sources */,
 				1156DBBB20C3B80F00849379 /* SelectedCardViewController.swift in Sources */,
