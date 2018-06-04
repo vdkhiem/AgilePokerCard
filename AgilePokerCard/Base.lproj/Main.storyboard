@@ -408,7 +408,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCa-ll-Wse" userLabel="XS" customClass="DesignableButton" customModule="AgilePokerCard">
                                                         <rect key="frame" x="0.0" y="0.0" width="98.5" height="173"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                        <state key="normal" title="0">
+                                                        <state key="normal" title="XS">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -438,7 +438,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atz-OE-pkZ" userLabel="S" customClass="DesignableButton" customModule="AgilePokerCard">
                                                         <rect key="frame" x="118.5" y="0.0" width="98" height="173"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                        <state key="normal" title="1/2">
+                                                        <state key="normal" title="S">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -459,7 +459,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jb2-dF-jdC" userLabel="M" customClass="DesignableButton" customModule="AgilePokerCard">
                                                         <rect key="frame" x="236.5" y="0.0" width="98.5" height="173"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                        <state key="normal" title="1">
+                                                        <state key="normal" title="M">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -485,7 +485,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpp-bz-BlB" userLabel="L" customClass="DesignableButton" customModule="AgilePokerCard">
                                                         <rect key="frame" x="0.0" y="0.0" width="98.5" height="173"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                        <state key="normal" title="2">
+                                                        <state key="normal" title="L">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
